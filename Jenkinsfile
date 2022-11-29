@@ -15,7 +15,7 @@ pipeline {
         stage("Deploy") {
             steps {
                 sh "rm -rf /usr/local/var/www/reactsep/build"
-                sh "cp -R /Users/aakash/.jenkins/workspace/reactsep/build /usr/local/var/www/reactsep/build"
+                sh "cp -R /Users/ak/.jenkins/jobs/reactsep/builds /usr/local/var/www/reactsep/build"
             }
         }
     }
